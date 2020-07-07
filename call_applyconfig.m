@@ -1,6 +1,6 @@
 function [ret]=call_applyconfig()
 try
-    addpath('D:\Aniket\Sample_models')
+    addpath('D:\Aniket\Sample_modelss')
     apply_config_setting()
 catch
     disp('Erro in calling function')
