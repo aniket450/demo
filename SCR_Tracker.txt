@@ -1,0 +1,8 @@
+SCR Tracker Info
+SCR	|Description	|Status	|Commit msg	|Owner	|Reviewer	|
+SCR_001	|Auto updation of scr 	|Open	|Adding scr_tracker functionality	|Aniket	|madhu	|
+SCR_002	|Generic scripts for CI and GUI	|CLOSED	| updated the script for genaralisation 	|Prashanth KS	|madhu	|
+SCR_003	|Test vector update. Autofil prev input signal if empty in testplan	|CLOSED	| update in testvector creation script file.	|madhu kumar tm	|prashanth	|
+SCR_004	|safe close system	|Open	|	|	|	|
+SCR_005	|Auto updation of SCR to git	|CLOSED	| addded git bat file to auto commit scr tracker file 	|madhu kumar tm	|murugan	|
+SCR_006	|Generate SCR text file for compare	|CLOSED	|generate scr file for compare 	|Murugan	|madhu	|

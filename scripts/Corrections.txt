@@ -1,0 +1,13 @@
+Current version improvements:
+
+1. Change of 'str2double' to 'str2num' in 'check_param_update.m'.
+2. increased the iterations from 'length-1' to 'length' in 'check_param_update.m' function.
+3. changed the splitter ';' to '&' in parameter update list in test vector and in 'check_param_update.m' function.
+4. removed default resolution and variable input arguments in 'perform_mil_test.m' and 'test_testcase_id.m' and 'test_requirement_id.m'
+5. updated Test Vector template with each input output signal resolution.
+6. updated 'perform_mil_test.m' and 'validate_testcase.m' to validate each signal with tolerance as the signal resolution.
+
+Future version Scope:
+
+1. Updation of MAT file only if the change in data in Test Vector file.
+2. GUI integration.

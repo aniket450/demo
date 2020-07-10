@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    stages {
+		stage('Checkout Supporting files') {
+            steps {
+				echo 'Getting Supporting files for build'
+			}
+		}
+		stage('Checkout Compiler license') {
+            steps {
+				echo 'Getting Compiler license for build'
+			}
+		}
+        stage('Build Hardware') {
+            steps {
+				echo 'Trigger Hardware Build'
+			}
+        }
+		stage('Zip artifacts') {
+            steps {
+				echo 'Zipping Build artifacts'
+			}
+        }
+		stage('Update SCR tracker') {
+            steps {
+				echo 'updating SCR status'
+				bat 'python SCR_status.py'
+				bat 'python scr_text_conv.py'
+				bat 'git_commit.bat'
+			}
+		}
+		stage('Email Send') {
+            steps {
+				echo 'Sending Email'
+			}
+        }
+	}
+		
+}
